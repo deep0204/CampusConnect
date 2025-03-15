@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect - Home</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <!-- Header -->
+<header class="header">
+    <div class="logo-container">
+        <img src="CCLOGO.png" alt="Campus Connect Logo" class="logo-img">
+        <div class="logo">Campus Connect</div>
+    </div>
+    <div class="profile" onclick="openProfile()">
+        <img src="PP.jpg" alt="Profile">
+        <p>Deep Bansal</p>
+    </div>
+</header>
+
+
+    <!-- Main Section -->
+    <div class="main-container">
+        <h1 class="coming-soon">COMING <span>SOON</span></h1>
+        <div class="features">
+            <div class="feature-box">
+                <img src="11.png" alt="Exam Insights">
+                <h2>Exam Insights</h2>
+                <p>Get in-depth analysis and statistics on government exams.</p>
+            </div>
+            <div class="feature-box">
+                <img src="22.png" alt="College Explorer">
+                <h2>College Explorer</h2>
+                <p>Find the best colleges based on your exam scores.</p>
+            </div>
+            <div class="feature-box">
+                <img src="33.png" alt="Career Guidance">
+                <h2>Career Guidance</h2>
+                <p>Explore career options based on your qualifications.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Modal -->
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <h2>Profile Details</h2>
+            <p><strong>Name:</strong> Deep Bansal</p>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Email:</strong> deepbansal2745@gmail.com</p>
+            <button class="modal-close" onclick="closeProfile()">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        © 2025 Campus Connect. All rights reserved.
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>

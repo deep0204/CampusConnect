@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.profile-section img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Profile Modal Styling */
+.profile-modal {
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    background: white;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    border-radius: 10px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #007bff;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+select, button {
+    margin-top: 20px;
+    padding: 15px;
+    width: 350px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+
+/* Dropdown Styling */
+select {
+    background-color: white;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+select:hover {
+    background-color: #eaf4ff;
+    border-color: #007bff;
+}
+/* Styling the Dropdown to Match Input Fields */
+.exam-dropdown {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    background-color: #f9f9f9;
+    appearance: none; /* Hide default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Dropdown Arrow Customization */
+.dropdown-container {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-container::after {
+    content: "▼";
+    font-size: 16px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    pointer-events: none;
+}
+
+/* Hover & Focus Effects */
+.exam-dropdown:hover,
+.exam-dropdown:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.2);
+}
+
+
+/* Submit Button Styling */
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 22px;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.bubbly-appear {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.bouncy-btn {
+    animation: bounce 0.6s infinite alternate ease-in-out;
+}
+.fade-in {
+    opacity: 0; /* Start invisible */
+    transform: translateY(-20px); /* Move slightly up */
+    animation: fadeIn 0.8s ease-in-out forwards;
+}

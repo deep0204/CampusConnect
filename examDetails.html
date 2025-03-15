@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Details - Campus Connect</title>
+    <link rel="stylesheet" href="examDetails.css">
+    <script defer src="examDetails.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Campus Connect</div>
+        <div class="profile-section" onclick="toggleProfile()">
+            <img src="PP.jpg" alt="Profile">
+        </div>
+        <div class="profile-modal" id="profileModal">
+            <div class="profile-card">
+                <h3>👤 Deep Bansal</h3>
+                <p>📩 deepbansal2745@gmail.com</p>
+                <p>🚻 Male</p>
+                <button onclick="toggleProfile()">Close</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <h1 class="fade-in">Have you appeared in any <span class="highlight">Government Examinations?</span></h1>
+            <div class="dropdown-container">
+                <select class="exam-dropdown fade-in" id="exam-type">
+                    <option value="" disabled selected>Select Examination</option>
+                    <option value="JEE">JEE</option>
+                    <option value="NEET">NEET</option>
+                    <option value="UPSC">UPSC</option>
+                    <option value="CAT">CAT</option>
+                </select>
+                <button onclick="goToNextPage()" class="bouncy-btn">Submit</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>All rights reserved © 2025 Campus Connect</p>
+    </footer>
+</body>
+</html>
