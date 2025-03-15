@@ -6,6 +6,12 @@
     <title>Login | Campus Connect</title>
     <link rel="stylesheet" href="loginStyle.css">
 </head>
+    <script>
+    function redirectToExamDetails(event) {
+        event.preventDefault(); // Prevent default form submission
+        window.location.href = "examDetails.html"; // Redirect manually
+    }
+</script>
 <body>
     <div class="container">
         <!-- Left Section -->
@@ -22,7 +28,7 @@
                     <img src="CCLOGO.png" alt="Campus Connect Logo" class="logo">
                 </header>
                 <h2>Welcome Back!</h2>
-                <form action="examDetails.html">
+                <form onsubmit="redirectToExamDetails(event)">
                     <div class="input-group">
                         <label for="email">Email ID</label>
                         <input type="email" id="email" name="email" required>
